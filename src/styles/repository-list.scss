@@ -1,0 +1,15 @@
+.repository-list {
+  margin: 40px;
+
+  h1 {
+    margin-bottom: 24px;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  ul > * + .repository-item {
+    margin-top: 8px;
+  }
+}
