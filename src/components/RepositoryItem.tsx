@@ -1,6 +1,14 @@
 import "../styles/repository-item.scss";
 
-export function RepositoryItem(props) {
+interface RepositoryItemProps {
+  repository: {
+    name: string;
+    description: string;
+    html_url: string;
+  };
+}
+
+export function RepositoryItem(props: RepositoryItemProps) {
   return (
     <li className="repository-item">
       <p className="title">{props.repository?.name}</p>
